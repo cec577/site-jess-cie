@@ -1,0 +1,237 @@
+.site-title {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.4rem;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:after {
+    border-top: 0.4375rem solid;
+    content: "";
+    display: block;
+    height: 0;
+    margin: 0.6rem auto 2rem;
+    width: 10.875rem;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    font-size: 8rem;
+    top: 50%;
+  }
+}
+
+.site-logo {
+  height: 6rem;
+  width: 9rem;
+  text-shadow: 2px 2px #000;
+}
+
+.subtitles {
+  font-family: "Piedra", cursive;
+
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.h3-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    font-size: 1.3rem;
+  }
+}
+.prestations {
+  //font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.price {
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    font-size: 2rem;
+  }
+  font-weight: bold;
+  color: $secondary;
+}
+
+.product-image {
+  background: #dcfde4;
+  border-bottom: 1px solid theme-color("secondary");
+  color: theme-color("secondary");
+  height: 0;
+  padding-bottom: 28%;
+  position: relative;
+
+  &:hover {
+    background: $secondary;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.link-card {
+  text-shadow: none;
+  color: $red;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $red;
+  }
+}
+.card-text {
+  height: 0;
+  padding-bottom: 19%;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    padding-bottom: 23%;
+  }
+  position: relative;
+}
+
+.background-image {
+  background-image: url(../images/image-site1.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    background-size: none;
+  }
+}
+
+.bg-dark {
+  background: transparent !important;
+}
+
+.active {
+  color: theme-color("secondary") !important;
+}
+
+.navbar-collapse {
+  color: white;
+  text-transform: uppercase;
+}
+a {
+  transition: transform 0.3s ease-in-out;
+  text-shadow: 3px 2px 6px black;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+  }
+}
+
+.image-podium {
+  height: 13rem;
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    height: 16rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    height: 16rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    height: 28rem;
+  }
+}
+
+.image-animal {
+  width: 89%;
+}
+
+#site-navbar {
+  background: $primary;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    background: transparent;
+  }
+  position: fixed;
+  width: 100%;
+  transition: all 0.8s ease-in-out;
+}
+
+.header2 {
+  background: theme-color() !important;
+  transform: translateY(0) !important;
+  position: fixed !important;
+}
+
+.navbar {
+  @extend .px-md-3;
+}
+
+svg {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.subtitle-main {
+  color: white;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 2px 6px black;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    font-size: 1.3rem;
+    top: 80%;
+  }
+}
+
+.screen-height {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.advantages {
+  svg {
+    color: theme-color("secondary");
+    margin-bottom: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
+.tarif {
+  height: 100%;
+}
+.card {
+  height: 0;
+  /* padding-left: 20px; */
+  padding-bottom: 86%;
+  /* padding-right: 20px; */
+  position: relative;
+}
+
+.form-control {
+  margin-top: 2rem;
+}
+
+.subtitles-footer {
+  @extend .subtitles;
+  margin-bottom: 2rem;
+}
+
+.signature {
+  font-size: 0.8rem;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.nav-link-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    width: auto;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  justify-content: center;
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    flex-direction: auto;
+  }
+}
