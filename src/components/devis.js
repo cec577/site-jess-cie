@@ -11,10 +11,10 @@ const Devis = ({ pageInfo }) => {
       </h2>
       <Container data-aos="fade-up">
         <Form
-          method="post"
           name="devis"
+          method="post"
           data-netlify="true"
-          data-netlify-honeypost="bot-field"
+          data-netlify-honeypot="bot-field"
         >
           <Row>
             <Col md="6">
