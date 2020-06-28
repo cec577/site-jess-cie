@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import React from "react"
+import { Row, Col, Container } from "react-bootstrap"
 //import Dog from '../images/patte-dog.svg';
 
 import Layout from "../components/layout"

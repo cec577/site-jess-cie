@@ -1,16 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Button,
-  Col,
-  Row,
-} from "react-bootstrap"
-import logo from "../images/logo.png"
+import { Col, Row } from "react-bootstrap"
 import moi from "../images/jessica-podium.jpg"
 
 const About = () => (

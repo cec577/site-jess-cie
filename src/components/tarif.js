@@ -1,18 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Button,
-  Col,
-  Row,
-  Card,
-  Container,
-} from "react-bootstrap"
-import logo from "../images/logo.png"
+import { Col, Row, Card, Container } from "react-bootstrap"
 
 const Tarif = ({ pageInfo }) => {
   console.log(pageInfo)

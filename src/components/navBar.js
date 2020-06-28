@@ -7,8 +7,7 @@ import { FaHome } from "react-icons/fa"
 import { FaFacebookSquare } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
-import logo from "../images/logo.png"
+import { Navbar, Nav } from "react-bootstrap"
 
 function Header2() {
   const [header, setHeader] = useState("header")

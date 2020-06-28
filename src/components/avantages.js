@@ -1,9 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FaPaw } from "react-icons/fa"
-
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
-import logo from "../images/logo.png"
 
 const Avantages = ({ pageInfo }) => {
   console.log(pageInfo)

@@ -1,17 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Button,
-  Col,
-  Row,
-  Container,
-} from "react-bootstrap"
-import logo from "../images/logo.png"
+import { Form, Button, Col, Row, Container } from "react-bootstrap"
 
 const Devis = ({ pageInfo }) => {
   console.log(pageInfo)
