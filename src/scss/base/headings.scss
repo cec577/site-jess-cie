@@ -30,8 +30,12 @@
 .subtitles {
   font-family: "Piedra", cursive;
 
-  margin-bottom: 4rem;
-  padding-top: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+  }
 }
 
 .h3-title {
@@ -73,7 +77,7 @@
 
 .link-card {
   text-shadow: none;
-  color: $red;
+  color: $red !important;
   text-transform: uppercase;
 
   &:hover {
@@ -90,21 +94,18 @@
 }
 
 .background-image {
-  background-image: url(../images/image-site1.jpg);
+  background-image: url(../images/image-mobile.png);
   background-size: cover;
   min-height: 100vh;
   width: 100%;
   @media (min-width: map-get($grid-breakpoints, md)) {
     background-size: none;
+    background-image: url(../images/image-site1.jpg);
   }
 }
 
 .bg-dark {
   background: transparent !important;
-}
-
-.active {
-  color: theme-color("secondary") !important;
 }
 
 .navbar-collapse {
@@ -137,7 +138,7 @@ a {
 }
 
 .image-animal {
-  width: 89%;
+  width: 93%;
 }
 
 #site-navbar {
@@ -167,14 +168,16 @@ svg {
 
 .subtitle-main {
   color: white;
-  top: 69%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 3px 2px 6px black;
+  width: 94%;
 
   @media (min-width: map-get($grid-breakpoints, md)) {
     font-size: 1.3rem;
     top: 80%;
+    width: auto;
   }
 }
 
@@ -222,9 +225,11 @@ svg {
   display: block;
   width: 100%;
   text-align: center;
+  padding: 1rem 0 1rem 0;
 
   @media (min-width: map-get($grid-breakpoints, md)) {
     width: auto;
+    padding: auto;
   }
 }
 
@@ -234,4 +239,38 @@ svg {
   @media (min-width: map-get($grid-breakpoints, md)) {
     flex-direction: auto;
   }
+}
+
+.bg-degrad {
+  background: linear-gradient(to right, $primary 34%, $secondary 65%);
+}
+
+.bg-degrad1 {
+  background: linear-gradient(to right, #43938b 45%, #dcfde4 126%);
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    background: linear-gradient(to right, $secondary 34%, #dcfde4 65%);
+  }
+}
+.svg-space {
+  margin-right: 1rem;
+}
+.navbar-space {
+  padding: 0.5rem;
+}
+
+.signature-insta {
+  color: fuchsia;
+  text-decoration: underline;
+}
+
+.color-heart {
+  svg {
+    color: red;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.promenade-quote {
+  font-weight: bold;
 }

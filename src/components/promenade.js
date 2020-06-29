@@ -19,7 +19,7 @@ const PromenadeEducative = ({ pageInfo }) => {
           />
         </div>
         <Col className="col-12 col-md-6 m-auto" data-aos="fade-left">
-          <p class="mx-md-5">
+          <p class="mx-md-5 pt-1 pt-md-0">
             Ayant fait de nombreux concours d’agility, d’obéissance, de RING et
             de MONDIORING, notamment avec mon chien Furax au paradis d’Orsy
             (berger belge malinois) avec qui j’ai été sélectionné au championnat
@@ -29,7 +29,7 @@ const PromenadeEducative = ({ pageInfo }) => {
           </p>
         </Col>
       </Row>
-      <div className="pt-2">
+      <div className="pt-2 promenade-quote">
         Une éducation positive basée sur la confiance et le respect du chien.
       </div>
     </>

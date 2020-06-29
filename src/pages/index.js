@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
   componentDidMount() {
     AOS.init({
       duration: 2000,
-      disable: "mobile",
+      //disable: "mobile",
     })
   }
 
@@ -33,10 +33,10 @@ class IndexPage extends React.Component {
             </Col>
           </Row>
         </Container>
-        <Container fluid className="text-center text-light bg-secondary pb-2">
+        <Container fluid className="text-center text-light bg-degrad1 pb-2">
           <About />
         </Container>
-        <Container fluid className="text-center bg-primary text-light pb-2">
+        <Container fluid className="text-center bg-degrad text-light pb-2">
           <PromenadeEducative />
         </Container>
         <Container fluid className="text-center bg-light text-primary">

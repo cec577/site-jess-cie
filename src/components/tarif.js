@@ -1,5 +1,6 @@
 import React from "react"
 import { Col, Row, Card, Container } from "react-bootstrap"
+import { Link } from "react-scroll"
 
 const Tarif = ({ pageInfo }) => {
   console.log(pageInfo)
@@ -35,12 +36,26 @@ const Tarif = ({ pageInfo }) => {
                 <p className="price">15€ / visite </p>
                 <p>Soit 30€ / jour pour 2 visites</p>
               </Card.Text>
-              <a href="#" className="link-card text-center">
+              <Link
+                to="Devis-gratuit"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Demander un devis
-              </a>
-              <a href="#" className="link-card text-center">
+              </Link>
+              <Link
+                to="contact-me"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Me contacter
-              </a>
+              </Link>
             </Card>
           </Col>
 
@@ -61,12 +76,26 @@ const Tarif = ({ pageInfo }) => {
               <Card.Text>
                 <p className="price">15€ / visite </p>
               </Card.Text>
-              <a href="#" className="link-card text-center">
+              <Link
+                to="Devis-gratuit"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Demander un devis
-              </a>
-              <a href="#" className="link-card text-center">
+              </Link>
+              <Link
+                to="contact-me"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Me contacter
-              </a>
+              </Link>
             </Card>
           </Col>
 
@@ -86,16 +115,30 @@ const Tarif = ({ pageInfo }) => {
               <Card.Text>
                 <p className="price">10€ / jour</p>
               </Card.Text>
-              <a href="#" className="link-card text-center">
+              <Link
+                to="Devis-gratuit"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Demander un devis
-              </a>
-              <a href="#" className="link-card text-center">
+              </Link>
+              <Link
+                to="contact-me"
+                className="link-card text-center"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
                 Me contacter
-              </a>
+              </Link>
             </Card>
           </Col>
           <Col>
-            <p className="text-center py-2">
+            <p className="text-center pb-2">
               Secteur : 15km autour de Marange-Silvange
             </p>
           </Col>

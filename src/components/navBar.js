@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 //import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { ExternalLink } from "react-external-link"
 
 import { Link } from "react-scroll"
 import { FaHome } from "react-icons/fa"
@@ -35,7 +36,7 @@ function Header2() {
           {/*<img src={logo} alt="site-logo" className="site-logo"/> */}
         </AnchorLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="navbar-space">
           {/* <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}> */}
           {/*<Link to="/page-2" className="link-no-style">*/}
 
@@ -105,12 +106,24 @@ function Header2() {
             Devis gratuit
           </Link>
           <Nav className="ml-auto">
-            <Nav.Link as="span" eventKey="Devis gratuit">
+            <ExternalLink
+              as="d-block"
+              eventKey="Devis gratuit"
+              href="https://www.facebook.com/pg/JESSCie-104757841295099/services/?ref=page_internal"
+              target="_blank"
+              className="svg-space"
+            >
               <FaFacebookSquare />
-            </Nav.Link>
-            <Nav.Link as="span" eventKey="Devis gratuit">
+            </ExternalLink>
+
+            <ExternalLink
+              as="d-block"
+              eventKey="Devis gratuit"
+              href="https://www.instagram.com/jesscie2/"
+              target="_blank"
+            >
               <FaInstagram />
-            </Nav.Link>
+            </ExternalLink>
             {/*<Form inline onSubmit={e => e.preventDefault()}>
                 <Form.Group>
                   <FormControl
