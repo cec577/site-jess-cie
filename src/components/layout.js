@@ -43,12 +43,12 @@ const Layout = ({ children, pageInfo }) => (
               <header class="background-image position-relative">
                 <div class=" text-center">
                   <h1 className="position-absolute site-title text-light">
-                    Jess&cie
+                    JESS&Cie
                   </h1>
                   <div className="subtitle-main position-absolute">
                     {" "}
                     Vous ne voulez pas changer les habitudes de vos animaux en
-                    votre absence ? Appelez <a className="">JESS&CIE</a> pour
+                    votre absence ? Appelez <a className="">JESS&Cie</a> pour
                     une garde à votre domicile en toute sécurité !
                   </div>
                 </div>
@@ -66,9 +66,12 @@ const Layout = ({ children, pageInfo }) => (
                     Me contacter
                   </h2>
 
-                  <p class="text-uppercase">Jess&cie</p>
-                  <p>06.02.71.92.01</p>
-                  <p>jessica.cogliati2@gmail.com</p>
+                  <p className="text-uppercase display-2 font-weight-bold">
+                    Jess&cie
+                  </p>
+                  <p className="display-1">Ouvert 7j/7 et jours fériés</p>
+                  <p className="display-1">06.02.71.92.01</p>
+                  <p className="display-1">jessica.cogliati2@gmail.com</p>
                   <div class="social-link-footer">
                     <ExternalLink
                       as="d-block"

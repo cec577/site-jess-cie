@@ -81,7 +81,7 @@ const Devis = () => {
               name="email"
               onChange={handleChange}
               value={formState.email}
-              placeholder="name@example.com"
+              placeholder="Email@exemple.com"
             />
           </Form.Group>
           <Form.Control
@@ -90,7 +90,7 @@ const Devis = () => {
             name="tel"
             onChange={handleChange}
             value={formState.tel}
-            placeholder="numéro de téléphone"
+            placeholder="Numéro de téléphone"
           />
 
           <Form.Group controlId="exampleForm.ControlTextarea1">

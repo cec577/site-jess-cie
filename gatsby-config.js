@@ -4,7 +4,7 @@ const globImporter = require('node-sass-glob-importer');
 module.exports = {
   pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
-    title: `Gatsby React Bootstrap Starter`,
+    title: `JESS&Cie | Garde d'aminaux`,
     description: `, 25 ans, élevée depuis toujours avec des animaux, diplômée
     d’un bac professionnel conduite et gestion de l’entreprise dans le
     secteur canin et félin et ayant fait de nombreux stages dans le

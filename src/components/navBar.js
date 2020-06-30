@@ -105,6 +105,18 @@ function Header2() {
           >
             Devis gratuit
           </Link>
+          <Link
+            className="pr-lg-1  nav-link-header"
+            activeClass="active"
+            to="contact-me"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            eventKey="Contactez-moi"
+          >
+            Contact
+          </Link>
           <Nav className="ml-auto">
             <ExternalLink
               as="d-block"

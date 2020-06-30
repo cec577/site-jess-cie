@@ -143,7 +143,7 @@ a {
 
 #site-navbar {
   background: $primary;
-  @media (min-width: map-get($grid-breakpoints, md)) {
+  @media (min-width: map-get($grid-breakpoints, lg)) {
     background: transparent;
   }
   position: fixed;
@@ -199,7 +199,7 @@ svg {
 .card {
   height: 0;
   /* padding-left: 20px; */
-  padding-bottom: 86%;
+  padding-bottom: 95%;
   /* padding-right: 20px; */
   position: relative;
 }
@@ -226,9 +226,16 @@ svg {
   width: 100%;
   text-align: center;
   padding: 1rem 0 1rem 0;
+  font-size: 0.7rem;
+  font-weight: initial;
 
   @media (min-width: map-get($grid-breakpoints, md)) {
     width: auto;
+    padding: auto;
+  }
+  @media (min-width: map-get($grid-breakpoints, xl)) {
+    font-size: 16px;
+    font-weight: bold;
     padding: auto;
   }
 }

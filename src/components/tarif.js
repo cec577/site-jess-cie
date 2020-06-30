@@ -9,17 +9,14 @@ const Tarif = ({ pageInfo }) => {
       <h2 className="subtitles text-center" id="Tarifs">
         Tarifs
       </h2>
-      <p className="px-md-4 pb-1">
-        Vous travaillez et n’avez pas le temps de sortir votre animal
-        convenablement ? Appelez JESS&CIE, je serais à votre disposition et à
-        celle de votre toutou pour de longues ballades et travaillerais les
-        exercices demandés (exemples : marche aux pieds, se mettre assis à
-        chaque arrêt, rappel aux pieds…etc.).
+      <p className="font-weight-bold text-center text-secondary">
+        Les prix varient selon le nombre d'animaux:
       </p>
+
       <Container>
         <Row>
           <Col
-            className="col-12 col-md-4 tarif pb-2"
+            className="col-12 col-md-6 col-lg-4 tarif pb-2"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
@@ -60,7 +57,7 @@ const Tarif = ({ pageInfo }) => {
           </Col>
 
           <Col
-            className="col-12 col-md-4 tarif pb-2"
+            className="col-12 col-md-6 col-lg-4 tarif pb-2"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
@@ -100,7 +97,7 @@ const Tarif = ({ pageInfo }) => {
           </Col>
 
           <Col
-            className="col-12 col-md-4 tarif pb-2"
+            className="col-12 col-md-6 col-lg-4 tarif pb-2"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
@@ -137,7 +134,7 @@ const Tarif = ({ pageInfo }) => {
               </Link>
             </Card>
           </Col>
-          <Col>
+          <Col md="12">
             <p className="text-center pb-2">
               Secteur : 15km autour de Marange-Silvange
             </p>
