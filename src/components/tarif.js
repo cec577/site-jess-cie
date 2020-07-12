@@ -9,7 +9,13 @@ const Tarif = ({ pageInfo }) => {
       <h2 className="subtitles text-center" id="Tarifs">
         Tarifs
       </h2>
-      <p className="font-weight-bold text-center text-secondary">
+      <p className="font-weight-bold text-secondary px-lg-4">
+        Première visite{" "}
+        <span className="text-danger text-uppercase">gratuite</span>, pour
+        établir un premier contact avec l'animal et prendre note de tous ses
+        besoins au quotidien.
+      </p>
+      <p className="text-center text-secondary">
         Les prix varient selon le nombre d'animaux:
       </p>
 
@@ -135,8 +141,13 @@ const Tarif = ({ pageInfo }) => {
             </Card>
           </Col>
           <Col md="12">
-            <p className="text-center pb-2">
+            <p className="text-center">
               Secteur : 15km autour de Marange-Silvange
+            </p>
+            <p className="text-center pb-2 px-lg-4 text-secondary">
+              Je travaille aussi avec une thérapeute energétique qui peut
+              intervenir en cas d'urgence en attendant d'aller chez le
+              vétérinaire si votre animal se blesse .
             </p>
           </Col>
         </Row>

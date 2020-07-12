@@ -10,6 +10,7 @@ import Tarif from "../components/tarif"
 import Devis from "../components/devis"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import ScrollTop from "react-scrolltop-button"
 
 import Avantages from "../components/avantages"
 
@@ -25,6 +26,15 @@ class IndexPage extends React.Component {
     return (
       <Layout pageInfo={{ pageName: "index" }}>
         <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+        <ScrollTop
+          text=""
+          distance={100}
+          breakpoint={1500}
+          style={{ backgroundColor: "#43938b" }}
+          className="scroll-your-role"
+          speed={1000}
+          target={75}
+        />
         <Container fluid className="text-center">
           <Row>
             <Col className="pb-2">

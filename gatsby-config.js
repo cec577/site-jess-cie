@@ -15,15 +15,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,
     {
-   resolve: `gatsby-plugin-sass`,
-   options: {
-    resolve: 'gatsby-plugin-sass',
-    options: {
-      data: `@import "${__dirname}/src/scss/";`,
-    }
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/scss/style.scss`,
+      },
    },
-},
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
